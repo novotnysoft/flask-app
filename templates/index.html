@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Domů{% endblock %}
+{% block content %}
+<div class="alert alert-primary text-center" role="alert">
+<h1>Python programování</h1>
+<p>Jmenuji se Josef Novotný a jsem vývojář webových aplikací. Mojí specializací je Python, Flask, Fast API a další technologie. Programování jsem se začal učit už na střední škole a od té doby jsem se v této oblasti neustále rozvíjel. Zajímá mě zejména vývoj webových aplikací a služeb, které jsou spolehlivé, výkonné a snadno udržovatelné.</p>
+    <p>Napište mi! <a href="mailto:novotnysoft@gmail.com">novotnysoft@gmail.com</a></p>
+
+</div>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+      <img src="{{ url_for('static', filename='snake.png') }}" alt="Josef Novotný">
+      <H3>Programování</H3>
+        <p>Python je jedním z nejpopulárnějších jazyků pro webový vývoj. Je používán k vývoji webových aplikací, webových stránek a webových API. Mezi populární webové frameworky v Pythonu patří Django, Flask a Pyramid.</p>
+    </div>
+    <div class="col">
+     <img src="{{ url_for('static', filename='api.png') }}" alt="Josef Novotný">
+      <H3>API</H3>
+        <p>API slouží pro výměnu dat mezi software. Zajímá mě FastAPI což je výkonný a robustní webový framework pro vytváření RESTful API v Pythonu. Které používá HTTP metody jako jsou GET, POST, PUT a DELETE. </p>
+    </div>
+    <div class="col">
+     <img src="{{ url_for('static', filename='database.png') }}" alt="Josef Novotný">
+      <H3>Databáze</H3>
+        <p>Relační databáze jsou výkonným a spolehlivým způsobem ukládání dat. Jsou snadno použitelné a nabízejí širokou škálu funkcí, které usnadňují vývojářům vytváření kvalitních aplikací.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
